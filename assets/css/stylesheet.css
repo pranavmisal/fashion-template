@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    /*color: #06184B;*/
+    color: #2f2fa2;
+    font-weight: 800;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #2f2fa2;
+}
+
+h6 {
+    text-transform: uppercase;
+    color: #2f2fa2;
+}
+
+.show > .nav-link,
+.active > .nav-link,
+.nav-link.show,
+.nav-link.active {
+    /*border-bottom: 2px solid #2f2fa2 !important;*/
+    color: #2f2fa2!important;
+}
+
+.nav-item > .nav-link {
+    color: #000 !important;
+}
+
+.nav-item > .nav-link.active {
+    color: #2f2fa2!important;
+}
+
+.nav-item > .nav-link:hover {
+    color: #2f2fa2!important;
+}
+
+.btn-primary {
+    background: #2f2fa2;
+    border: none;
+}
+
+/*testimonial*/
+.section-padding{
+    padding: 50px 0;
+}
+
+.team-info{
+    margin-top: 165px;
+}
+
+.team-info h1{
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    color: #000;
+}
+
+.team-info h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.team-info h6{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.team-info p{
+    margin: 40px 0;
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+}
+
+.team-div{
+    width: 45px;
+    background: #000;
+    height: 2px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.team-div:after{
+    position: absolute;
+    content: '';
+    width: 30px;
+    background: #000;
+    height: 2px;
+    bottom: 0;
+    top: 5px;
+}
+
+.list-inline{
+    display: flex;
+}
+
+.list-inline li{
+    width: 30px;
+    height: 30px;
+    background: #3545CF;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.list-inline li:hover{
+    background: #06184B;
+}
+
+.list-inline li a i{
+    color: #fff;
+    padding: 7px 8px;   
+}
+
+.team-img img{
+    margin: 50px auto;
+}
+
+#section1 .btn-outline-dark {
+    border-radius: 0px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.section-heading h1{
+    background: linear-gradient(to right, #3545CF, #404EC8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: #bbb;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: #bbb;
+}
+
+.box-wrap2{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box-wrap2 .card1{
+    width: 250px;
+    position: relative;
+    height: 300px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 26px rgba(5, 5, 5, 0.3);
+}
+
+.box-wrap2:hover .card1{
+    filter: blur(5px);
+    transform: scale(0.7);
+}
+
+.box-wrap2 .card1:hover{
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+.box-wrap2 .card1:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.box-wrap2 .card1:hover:before{
+    background: #000;
+    transform: scaleY(1.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.box-wrap2 .card1 .content1{
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+}
+
+.box-wrap2 .card1:hover .content1{
+    color: #fff;
+}
+
+.box-wrap2 .card1 .content1 h1{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.box-wrap2 .card1 .content1 p{
+    font-size: 0.9em;
+}
+
+.box-wrap2 .card1 .content1 a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+}
+
+.box-wrap2 .card1:hover .content1 a{
+    background: #2196f3;
+}
+
+#section3 .container{
+    padding: 50px 100px;
+}
+
+#section3 .carousel-inner{
+    box-shadow: 0 0 26px rgba(5, 5, 5, 0.3);
+}
+
+#section3 .row {
+    /*background: #ddd;*/
+}
+
+#section3 .text-controll{
+    margin: auto;
+    text-align: center;
+}
+
+.sale {
+    background: #2f2fa2;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 15px 0px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.off {
+    background: #000;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 15px 0px 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#section3 {
+    margin-bottom: 15px;
+}
+
+#section4 .box-wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 2;
+    background: #000;
+}
+
+.box:hover .imgBx{
+    transform: translateY(-100px);
+}
+
+.imgBx img{
+    transition: 0.5s;
+    width: 300px;
+    height: 400px;
+}
+
+.box:hover .imgBx img{
+    opacity: 0.5;
+}
+
+.socail-icon{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.socail-icon li{
+    list-style: none;
+}
+
+.socail-icon li a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff;
+    color: #262626;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.box:hover .socail-icon li a{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.box .socail-icon li a .fa{
+    transition: 0.5s;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.box .socail-icon li a:hover .fa{
+    transform: rotateY(360deg);
+}
+
+.box:hover .socail-icon li:nth-child(1) a{
+    transition-delay: 0s;
+}
+.box:hover .socail-icon li:nth-child(2) a{
+    transition-delay: 0.2s;
+}
+
+.box:hover .socail-icon li:nth-child(3) a{
+    transition-delay: 0.4s;
+}
+.box:hover .socail-icon li:nth-child(4) a{
+    transition-delay: 0.6s;
+}
+.box:hover .socail-icon li:nth-child(5) a{
+    transition-delay: 0.8s;
+}
+
+.details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    z-index: 4;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 1;
+}
+
+.details h2{
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.details p{
+    color: #bbb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+    background: transparent;
+}
+
+#section4 {
+    margin-bottom: 15px;
+}
+
+#section4 .container{
+    padding: 50px 100px;
+}
+
+#section4 .tab-grid{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#section4 .tab-grid .col-md-3{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+#section4 .text-center {
+    margin-bottom: 15px
+}
+
+#section5 .container {
+    padding: 50px 100px;
+}
+
+#section5 .foo-link{
+    padding: 0 100px;
+}
+
+#section5 .fa {
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 15px 2px;
+  border-radius: 50%;
+}
+
+#section5 .fa:hover {
+    opacity: 0.7;
+}
+
+#section5 .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#section5 .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+#section5 .fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+#section5 .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+#section5 .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+#section5 .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* media*/
+@media (max-width: 768px) {
+    .team-info {
+        margin-top: 0px;
+    }
+
+    #section3 .container {
+        padding: 0;
+    }
+
+    #section4 .box-wrap {
+        display: grid;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    #section4 .container {
+        padding: 10px;
+    }
+
+    .team-info h1 {
+        font-size: xx-large;
+    }
+
+    #section5 .container,
+    .col-md-4 {
+        padding: 10px;
+    }
+
+    #section5 .foo-link {
+        padding: 10px;
+    }
+}
