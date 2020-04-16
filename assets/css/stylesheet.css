@@ -24,6 +24,11 @@ body {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     font-size: 24px;
+    src: url("fonts/Dancing_Script/DancingScript.eot");
+    src: local("#"),
+     url("fonts/Dancing_Script/DancingScript.ttf") format("truetype"),
+     url("fonts/Dancing_Script/DancingScript.woff") format ("woff"),
+     url("fonts/Dancing_Script/DancingScript.svg") format ("svg");
 }
 
 h1 {
